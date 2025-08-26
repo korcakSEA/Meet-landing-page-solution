@@ -1,0 +1,19 @@
+@use './custom';
+
+/* Importing components and sections */
+//Components
+@use './components/buttons';
+@use './components/typography';
+@use './components/wrappers';
+@use './components/frame-line';
+
+
+//Sections
+@use './sections/header';
+@use './sections/main-content';
+@use './sections/footer-cta';
+
+
+body{
+  font-family: "Red Hat Display", sans-serif;
+}

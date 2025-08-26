@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/dist/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+
+  <title>Frontend Mentor | Meet landing page</title>
+</head>
+
+<body>
+
+  <!-- NAV starts here -->
+  <nav class="text-center px-10 mt-2 pt-6 mt-lg-0 pt-lg-10 ">
+    <!-- logo will be here -->
+    <img src="./assets/logo.svg" alt="Meet Logo" class="logo img-fluid">
+  </nav>
+  <!-- NAV ENDS HERE -->
+
+  <!-- HERO STARTS HERE -->
+  <section class="hero pt-8 mb-5 mb-md-8 overflow-hidden">
+    <div class="wrapper d-flex flex-column align-items-center justify-content-center gap-6 gap-md-9 gap-xl-5 flex-xl-row position-relative ">
+      <!-- Hero Images -->
+      <img src="./assets/tablet/image-hero.png" aria-hidden="true" class="wrapper__image" />
+      <img src="./assets/desktop/image-hero-left.png" aria-hidden="true"
+        class="wrapper__image__left position-absolute" />
+      <img src="./assets/desktop/image-hero-right.png" aria-hidden="true"
+        class="wrapper__image__right position-absolute" />
+      <!-- Hero Content-->
+      <div class="text-content d-flex flex-column align-items-center gap-4">
+        <h1 class="text-content__header">Group Chat for Everyone</h1>
+        <p class="text-content__text">
+          Meet makes it easy to connect with others face-to-face virtually and
+          collaborate across any device.
+        </p>
+        <div
+          class="hero__content__button d-flex flex-column flex-md-row align-items-center justify-content-center gap-3">
+          <button type="button" class="btn btn-primary">
+            Download <span>v1.3</span>
+          </button>
+          <button type="button" class="btn btn-secondary">What is it?</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- HERO ENDS HERE -->
+
+  <!-- MAIN CONTENT STARTS HERE -->
+  <main class="main-content pt-5 pt-md-7 mb-8 mb-lg-9">
+    <div class="wrapper d-flex flex-column gap-8">
+      <!-- Main content Number -->
+      <div class="content__number d-flex flex-column align-items-center">
+        <span class="line"></span>
+        <span class="frame">01</span>
+      </div>
+      <!--Main Content Image Collection -->
+      <div class="image-collection">
+        <div class="row">
+          <div class="col-6 col-md-3 mb-3 mb-md-0"><img src="./assets/desktop/image-woman-in-videocall.jpg"
+              alt="woman in video call" class="img-fluid rounded  content__image"></div>
+          <div class="col-6 col-md-3 mb-3 mb-md-0"><img src="./assets/desktop/image-women-videochatting.jpg"
+              alt="women video chatting" class="img-fluid rounded  content__image"></div>
+          <div class="col-6 col-md-3"><img src="./assets/desktop/image-men-in-meeting.jpg" alt="men in meeting"
+              class="img-fluid rounded  content__image"></div>
+          <div class="col-6 col-md-3"><img src="./assets/desktop/image-man-texting.jpg" alt="man texting"
+              class="img-fluid rounded  content__image"></div>
+        </div>
+      </div>
+      <!-- Main Content Text -->
+      <div class="text-content d-flex flex-column gap-5">
+        <div class="text-content__header d-flex flex-column gap-3">
+          <p class="mb-0">Built for modern use</p>
+          <h2 class="mb-0">Smarter meetings, all in one place</h2>
+        </div>
+        <p class="text-content__text mb-0">
+          Send messages, share files, show your screen, and record your meetings — all in one
+          workspace. Control who can join with invite-only team access, data encryption, and data export.
+        </p>
+      </div>
+    </div>
+  </main>
+  <!-- MAIN CONTENT ENDS HERE -->
+
+  <!-- FOOTER-CTA STARTS HERE -->
+  <section class="footer-cta position-relative">
+    <!-- Footer content Number -->
+    <div class="content__number d-flex flex-column align-items-center">
+      <span class="line"></span>
+      <span class="frame">02</span>
+    </div>
+    <!-- Footer starts here  -->
+    <footer class="py-11">
+      <div class="wrapper">
+        <div class="text-content d-flex flex-column align-items-center gap-4 flex-lg-row align-items-lg-start text-lg-start">
+          <h2 class="mb-0">Experience more together</h2>
+          <p class="mb-0">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+          <button type="button" class="btn btn-secondary ms-lg-auto">Download <span>v1.3</span></button>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!-- FOOTER-CTA ENDS HERE -->
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

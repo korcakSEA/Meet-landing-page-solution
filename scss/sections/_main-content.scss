@@ -1,0 +1,44 @@
+@use '../custom' as *;
+@use '../components/typography' as *;
+@use '../components/frame-line' as *;
+
+
+
+.main-content {
+
+  .wrapper {
+
+    .content__number {
+      .frame {
+        @extend %frame;
+      }
+
+      .line {
+        @extend %line;
+      }
+
+    }
+
+    .text-content {
+
+      &__header {
+        p {
+          @extend %text-preset-3;
+          text-transform: uppercase;
+          color: $cyan-600
+        }
+
+        h2 {
+          @extend %text-preset-2;
+          color: $slate-900
+        }
+      }
+
+      &__text {
+        @extend %text-preset-4;
+        color: $slate-600;
+      }
+
+    }
+  }
+}

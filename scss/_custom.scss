@@ -1,0 +1,67 @@
+/***** Variables *****/
+
+// Color system
+
+// theme colors
+$slate-900: hsl(240, 21%, 20%);
+$slate-600: hsl(240, 10%, 57%);
+$slate-300: hsl(240, 18%, 85%);
+
+// scss-docs-start color-variables
+
+$cyan-600: hsl(192, 37%, 48%);
+$cyan-400: hsl(192, 53%, 64%);
+$cyan-300: hsl(192, 90%, 77%);
+$purple-600: hsl(268, 34%, 53%);
+$purple-400: hsl(270, 60%, 70%);
+$purple-300: hsl(268, 100%, 86%);
+
+// scss-docs-start gray-color-variables
+$white: #fafafa;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+// scss-docs-end gray-color-variables
+
+// scss-docs-start theme-color-variables
+$primary: $cyan-600;
+$secondary: $purple-600;
+$success: $slate-600;
+$light: $slate-300;
+$dark: $slate-900;
+// scss-docs-end theme-color-variables
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25, // 4px    
+  2: $spacer * .5,  // 8px   
+  3: $spacer,       // 16px
+  4: $spacer * 1.5, // 24px     
+  5: $spacer * 2,   // 32px   
+  6: $spacer * 2.5, // 40px    
+  7: $spacer * 3.5, // 56px     
+  8: $spacer * 4,   // 64px   
+  9: $spacer * 4.5, // 72px     
+  10: $spacer * 5,  // 80px     
+  11: $spacer * 7,  // 112px     
+  );
+// scss-docs-end spacer-variables-maps
+
+//Importing BootStrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss'

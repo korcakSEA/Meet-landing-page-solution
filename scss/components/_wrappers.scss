@@ -1,0 +1,27 @@
+.wrapper {
+  width: clamp(310px, 88.55%, 70rem);
+  margin: 0 auto;
+}
+
+// Hero text content wrapper
+.hero .text-content {
+  width: clamp(310px, 58.333%, 28rem);
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+// Main text content wrapper
+.main-content .text-content {
+  width: clamp(310px, 65.625%, 34rem);
+  margin: 0 auto;
+  text-align: center;
+}
+
+// Footer CTA text content wrapper
+.footer-cta .wrapper .text-content {
+  width: clamp(310px, 5rem + 72.25vw, 70rem);
+  margin: 0 auto;
+  text-align: center;
+}
+

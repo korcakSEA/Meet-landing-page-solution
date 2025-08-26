@@ -1,0 +1,47 @@
+@use '../custom' as *;
+@use '../components/typography' as *;
+
+%buttonStyle {
+  border: none;
+  border-radius: 9999px;
+  transition: background-color .5s ease;
+}
+
+.btn {
+
+  font-size: 1rem;
+  font-weight: 900;
+  color: $white;
+  padding: 1rem 2.5rem;
+  width: fit-content;
+
+  &-primary {
+    background-color: $primary;
+    @extend %buttonStyle;
+
+    span {
+      color: $cyan-300;
+    }
+
+    &:hover {
+      background-color: $cyan-400;
+      color: $white;
+    }
+  }
+
+  &-secondary {
+    @extend %buttonStyle;
+    background-color: $secondary;
+
+    span{
+      color: $purple-300;
+    }
+
+    &:hover {
+      background-color: $purple-400;
+      color: $white;
+    }
+
+  }
+
+}

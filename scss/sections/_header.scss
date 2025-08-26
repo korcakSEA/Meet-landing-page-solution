@@ -1,0 +1,72 @@
+@use '../custom' as *;
+@use '../components/typography' as *;
+
+.hero {
+
+
+  .wrapper {
+    &__image {
+      max-width: 130%; // slightly larger than container, width makes it relative to screen size, but max-width keeps it from getting larger then parent container
+    }
+
+    &__image__left {
+      display: none
+    }
+
+    &__image__right {
+      display: none;
+    }
+
+
+    .text-content {
+
+      &__header {
+        @extend %text-preset-1;
+        color: $dark;
+      }
+
+      &__text {
+        @extend %text-preset-4;
+        color: $gray-600;
+      }
+    }
+
+
+    @include media-breakpoint-up(xl) {
+
+      .wrapper {
+        &__image {
+          display: none;
+        }
+
+        &__image__left {
+          display: block;
+          left: -11.25rem;
+          align-self: flex-start;
+        }
+
+        &__image__right {
+          display: block;
+          order: 3;
+          right: -11.25rem;
+          align-self: flex-end;
+          
+        }
+
+        .text-content {
+          order: 2;
+          width: 40%;
+        }
+      }
+
+    }
+
+  }
+
+
+
+
+
+
+
+}
